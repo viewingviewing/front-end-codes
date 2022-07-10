@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form onsubmit="saveReview();" name="review">
+    <fieldset>
+      <legend>리뷰 입력</legend>
+      사용자명 : <input type="text" name="username" id="username"><br>
+      공연명 : <input type="text" name="showname" id="showname"><br>
+      좌석위치 : <input type="text" name="seat" id="seat"><br>
+      별점 : 
+      <span class="star">
+        ★★★★★
+        <span>★★★★★</span>
+        <input type="range" id="star" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+      </span><br>
+      시야 : <input type="file"  name="review_image" id="review_image"><br>
+      후기 : <br><textarea name="review_text" id="review_text" cols="80" rows="5"></textarea><br>
+      <input type="submit" id="form_submit" value="저장하기">
+    </fieldset>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
