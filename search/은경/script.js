@@ -45,6 +45,7 @@ const db = [
 
 function search() {
   //여길 채워주면됩니다.
+  
   console.log('검색')
 }
 
