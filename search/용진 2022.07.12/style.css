@@ -16,6 +16,8 @@ input, button{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    display: none;
+    
 }
 
 #list>li {

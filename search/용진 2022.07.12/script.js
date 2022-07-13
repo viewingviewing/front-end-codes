@@ -51,12 +51,12 @@ const plays = [
   
   const list= document.getElementById('list');
 
-  function showList(val=''){
+  function showList(val=''.toUpperCase()){
     list.innerHTML = '';
     const res= plays.forEach(play=>{
-      if(play.showName.includes(val)||
-         play.artistName.includes(val)||
-         play.hallName.includes(val)){
+      if(play.showName.includes(val.toUpperCase())||
+         play.artistName.includes(val.toUpperCase())||
+         play.hallName.includes(val.toUpperCase())){
         const li =document.createElement('li');
         li.innerHTML =`
           <img src='${play.posterImg}' alt='${play.showName}'>
@@ -82,5 +82,6 @@ searchBtn.addEventListener('click', (e)=>{
   const val = searchInput.value;
   console.log(val);
   showList(val);
+  document.getElementById("list").style.display = 'flex';
 })
 
