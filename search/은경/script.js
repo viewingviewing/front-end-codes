@@ -64,5 +64,4 @@ function search() {
     alert('찾을 수 없습니다.');
   }
 }
-
 document.getElementById("btn").addEventListener("click", search);
