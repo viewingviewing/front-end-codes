@@ -21,11 +21,15 @@ input, button{
 }
 
 #list>li {
-    flex-basis: 48%;
-    margin-bottom: 20px;
+    flex-basis: 40%;
+    margin-bottom: 100px;
 }
 
 #list>li>img{
-    width: 80px;
+    float:left;
+    margin-right: 10px;
+    width: 100px;
+    height: 140px;
+
     
 }
