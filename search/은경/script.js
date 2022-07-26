@@ -43,10 +43,25 @@ const db = [
   },
 ];
 
-function search() {
-  //여길 채워주면됩니다.
-  
-  console.log('검색')
+function findDB(element, text){
+  if (element.artistName === text || element.showName === text || element.hallName === text){
+    return true;
+  } else {
+    return false;
+  }
 }
 
+function search() {
+  let text = document.querySelector(".search-text").value;
+  
+  let res = db.find((element)=>{
+    return findDB(element, text);
+  });
+
+  if (res !== undefined) {
+    console.log(text);
+  } else {
+    alert('찾을 수 없습니다.');
+  }
+}
 document.getElementById("btn").addEventListener("click", search);
