@@ -1,0 +1,248 @@
+@import "_variables";
+@import "reset";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+// VNG 만들기
+
+//section 별로 div 만들때 margin-top만 사용해서 조절 
+
+.ALLoutframe{
+    width: 1300px;
+    height: 1300px;
+    border: 1px solid #f44336;
+}
+// section1
+.outframe1{
+    width: 1300px;
+    height: 100px;
+    border: 1px solid red;
+    margin-top: 60px;
+     .logo{
+        width: 200px;
+        height: 80px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+   .right{
+        height: 100px;
+        margin-right: 100px;
+        float: right;
+        display: flex;
+        align-items: center;
+            
+            .right-1{
+            font-size: 15px;
+            padding:0px 0px 0px 30px;
+            }
+            .right-2{
+                font-size: 15px;
+                padding:0px 30px 0px 30px;
+            }
+             //-------------------------------------------------- VNG 만들기
+            .right-3{
+                padding:0px 0px 25px 0px;
+            a{
+            position: relative;
+            display: inline-block;
+            padding: 15px 20px;
+            color: #f403e077;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: 0.5s;
+            letter-spacing: 6px;
+            overflow: hidden;
+            margin-top: 25px;
+            }
+            a:hover{
+            background: #f403e077;
+            color: #050801;
+            box-shadow: 0 0 5px #f403e077,
+                        0 0 25px #f403e077,
+                        0 0 50px #f403e077,
+                        0 0 200px #f403e077;
+             -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+            }
+            a span{
+            position: absolute;
+            display: block;
+            }
+            a span:nth-child(1){
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg,transparent,#f403e077);
+            animation: animate1 1s linear infinite;
+            }
+            @keyframes animate1{
+            0%{
+                left: -100%;
+            }
+            50%,100%{
+                left: 100%;
+            }
+            }
+            a span:nth-child(2){
+            top: -100%;
+            right: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg,transparent,#f403e077);
+            animation: animate2 1s linear infinite;
+            animation-delay: 0.25s;
+            }
+            @keyframes animate2{
+            0%{
+                top: -100%;
+            }
+            50%,100%{
+                top: 100%;
+            }
+            }
+            a span:nth-child(3){
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(270deg,transparent,#f403e077);
+            animation: animate3 1s linear infinite;
+            animation-delay: 0.50s;
+            }
+        @keyframes animate3{
+            0%{
+                right: -100%;
+            }
+            50%,100%{
+                right: 100%;
+            }
+        }
+        a span:nth-child(4){
+            bottom: -100%;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(360deg,transparent,#f403e077);
+            animation: animate4 1s linear infinite;
+            animation-delay: 0.75s;
+        }
+        @keyframes animate4{
+            0%{
+                bottom: -100%;
+            }
+            50%,100%{
+                bottom: 100%;
+            }
+        }
+            }
+            .right-4{
+                font-size: 15px;
+                padding:0px 0px 0px 30px;
+            }
+    }   
+    .right-1:hover{color: plum; cursor: pointer;} 
+    .right-2:hover{color: plum; cursor: pointer;}
+    .right-4:hover{color: plum; cursor: pointer;}
+}
+// section2
+.outframe2{
+    width: 1300px;
+    height: 130px;
+    border: 1px solid red;
+    margin-top: 60px;
+    
+    .outframe2-1{
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 100px;
+    }
+    .outframe2-2{
+        margin-top: 10px;
+        margin-left: 100px;
+        font-size: 25px;
+    }
+    .outframe2-3{
+        height: 35px;
+        background-color: gainsboro;
+        font-size: 20px;
+        line-height: 35px;
+        // line-height랑 div height 같게 주면 수직 가운데 정렬 가능
+        margin-top: 35px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+}
+// section3
+.outframe3{
+    width: 1300px;
+    height: 845px;
+    border: 1px solid red;
+    margin-top: 100px;
+    
+    .show-list{
+        width: 1200px;
+        margin-left: 100px;
+      
+    }
+     .show{
+        width: 340px;
+        display: block;
+        text-decoration: none;
+        float: left;
+        margin-left: 0px;
+        margin-right: 43px;
+
+        .hoverimgchange{
+            width:340px ;
+            height:260px;
+            position: relative;
+
+            .before { 
+                width:100%; 
+                height:100%;
+                border:0px; 
+                display:block; 
+                position:absolute; 
+                top:0px; 
+                left:0px; 
+                transition: opacity 1s; 
+            }
+            .before:hover{
+                opacity: 0;    
+            }
+           
+    }
+    
+    .showtable1{
+        margin-top: 25px;
+        
+        .outframe3-table1-name{
+            padding-left: 20px;
+            font-size: 25px;
+        }
+        .outframe3-table1-date{
+            padding-left: 20px;
+            font-size: 25px;
+        }
+    }
+    .show-name{
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .show-seat{
+        margin-top: 10px;
+        margin-bottom: 50px;
+        font-size: 15px;
+    }
+    
+   
+
+
+
+
+
+     }
+ }
+ 
