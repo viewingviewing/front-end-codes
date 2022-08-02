@@ -49,45 +49,56 @@ table {
   border-spacing: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-.alloutframe {
+body {
   height: 100vh;
-  width: 100vw;
 }
 
-.outframe1 {
+.tooinner {
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  top: 0;
+  left: 0;
+  z-index: 9;
   width: 100%;
-  height: 7.69%;
-  margin-top: 4.61%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.outframe1 .logo {
-  width: 10%;
+header .tooinner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .tooinner .logo {
+  width: 200px;
+  height: 80px;
   float: left;
-  margin-left: 7.69%;
+  margin-top: 10px;
+  margin-left: 100px;
 }
-.outframe1 .right {
-  height: 7.69%;
-  margin-right: 7.69%;
-  margin-top: 2%;
+header .tooinner .right {
+  height: 100px;
+  margin-right: 100px;
   float: right;
   display: flex;
   align-items: center;
 }
-.outframe1 .right .right-1 {
+header .tooinner .right .right-1 {
   font-size: 20px;
   padding: 0px 0px 0px 30px;
 }
-.outframe1 .right .right-2 {
+header .tooinner .right .right-2 {
   font-size: 20px;
   padding: 0px 30px 0px 30px;
 }
-.outframe1 .right .right-3 {
+header .tooinner .right .right-3 {
   padding: 0px 0px 25px 0px;
 }
-.outframe1 .right .right-3 a {
+header .tooinner .right .right-3 a {
   position: relative;
   display: inline-block;
   padding: 15px 20px;
@@ -99,17 +110,17 @@ table {
   overflow: hidden;
   margin-top: 25px;
 }
-.outframe1 .right .right-3 a:hover {
+header .tooinner .right .right-3 a:hover {
   background: rgba(244, 3, 224, 0.4666666667);
   color: #050801;
   box-shadow: 0 0 5px rgba(244, 3, 224, 0.4666666667), 0 0 25px rgba(244, 3, 224, 0.4666666667), 0 0 50px rgba(244, 3, 224, 0.4666666667), 0 0 200px rgba(244, 3, 224, 0.4666666667);
   -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.3333333333));
 }
-.outframe1 .right .right-3 a span {
+header .tooinner .right .right-3 a span {
   position: absolute;
   display: block;
 }
-.outframe1 .right .right-3 a span:nth-child(1) {
+header .tooinner .right .right-3 a span:nth-child(1) {
   top: 0;
   left: 0;
   width: 100%;
@@ -134,7 +145,7 @@ table {
     left: 100%;
   }
 }
-.outframe1 .right .right-3 a span:nth-child(2) {
+header .tooinner .right .right-3 a span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 3px;
@@ -161,7 +172,7 @@ table {
     top: 100%;
   }
 }
-.outframe1 .right .right-3 a span:nth-child(3) {
+header .tooinner .right .right-3 a span:nth-child(3) {
   bottom: 0;
   right: 0;
   width: 100%;
@@ -188,7 +199,7 @@ table {
     right: 100%;
   }
 }
-.outframe1 .right .right-3 a span:nth-child(4) {
+header .tooinner .right .right-3 a span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 3px;
@@ -215,76 +226,79 @@ table {
     bottom: 100%;
   }
 }
-.outframe1 .right .right-4 {
+header .tooinner .right .right-4 {
   font-size: 20px;
   padding: 0px 0px 0px 30px;
 }
-.outframe1 .right-1:hover {
+header .tooinner .right-1:hover {
   color: plum;
   cursor: pointer;
 }
-.outframe1 .right-2:hover {
+header .tooinner .right-2:hover {
   color: plum;
   cursor: pointer;
 }
-.outframe1 .right-4:hover {
+header .tooinner .right-4:hover {
   color: plum;
   cursor: pointer;
 }
 
-.outframe2 {
-  width: 100vw;
-  height: 15%;
-  margin-top: 4.61%;
+.too-section1 {
+  margin-top: 50px;
 }
-.outframe2 .outframe2-1 {
+.too-section1 .section1-1 {
   font-size: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 7.69%;
+  margin-left: 100px;
 }
-.outframe2 .outframe2-2 {
-  margin-top: 20px;
-  margin-left: 7.69%;
-  font-size: 35px;
+.too-section1 .section1-2 {
+  margin-top: 10px;
+  margin-left: 100px;
+  font-size: 25px;
 }
-.outframe2 .outframe2-3 {
+.too-section1 .section1-3 {
   height: 35px;
   background-color: gainsboro;
-  font-size: 20px;
   line-height: 35px;
-  margin-top: 30px;
-  margin-left: 7.69%;
-  margin-right: 7.69%;
+  margin-top: 35px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.too-section1 .section1-3 .outframe2-3-1 {
+  font-size: 25px;
 }
 
-.outframe3 {
-  width: 100%;
-  margin-top: 7.69%;
+.too-section2 {
+  margin-top: 100px;
 }
-.outframe3 .show-list {
-  background-color: white;
-  height: 100vh;
-  margin-left: 7.69%;
-  margin-right: 7.69%;
+.too-section2 .show-list {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.outframe3 .show {
-  display: block;
+.too-section2 .show {
+  width: 340px;
+  display: inline-block;
   text-decoration: none;
-  float: left;
-  margin-left: 3%;
-  margin-right: 3%;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  cursor: pointer;
 }
-.outframe3 .show .hoverimgchange {
-  width: 75%;
-  height: 20%;
+.too-section2 .show img {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+.too-section2 .show .hoverimgchange {
+  width: 340px;
+  height: 260px;
   position: relative;
 }
-.outframe3 .show .hoverimgchange .after {
-  width: 100%;
-  height: 100%;
-}
-.outframe3 .show .hoverimgchange .before {
+.too-section2 .show .hoverimgchange .before {
   width: 100%;
   height: 100%;
   border: 0px;
@@ -294,27 +308,22 @@ table {
   left: 0px;
   transition: opacity 1s;
 }
-.outframe3 .show .hoverimgchange .before:hover {
+.too-section2 .show .hoverimgchange .before:hover {
   opacity: 0;
 }
-.outframe3 .show .showtable1 {
-  margin-top: 25px;
+.too-section2 .show .review-info {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
 }
-.outframe3 .show .showtable1 .outframe3-table1-name {
-  padding-left: 20px;
-  font-size: 25px;
+.too-section2 .show .review-info-top .yellow-star {
+  font-size: 1.2em;
+  color: rgb(255, 191, 0);
 }
-.outframe3 .show .showtable1 .outframe3-table1-date {
-  padding-left: 20px;
-  font-size: 25px;
+.too-section2 .show .review-info-top span {
+  font-size: 0.8em;
+  color: #bbb;
 }
-.outframe3 .show .show-name {
-  width: 75%;
-  margin-top: 15px;
-  font-size: 20px;
-}
-.outframe3 .show .show-seat {
-  margin-top: 10px;
-  margin-bottom: 50px;
-  font-size: 15px;
+.too-section2 .show p {
+  font-size: 1em;
+  margin-top: 8px;
 }/*# sourceMappingURL=style.css.map */
