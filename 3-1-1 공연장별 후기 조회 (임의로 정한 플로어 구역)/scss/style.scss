@@ -6,37 +6,39 @@
 
 //section 별로 div 만들때 margin-top만 사용해서 조절 
 
-.ALLoutframe{
-    width: 1300px;
-    height: 1300px;
-    border: 1px solid #f44336;
+// COMMON
+
+* {
+    box-sizing: border-box;
 }
-// section1
+.alloutframe{
+    height: 100vh;
+    width: 100vw;
+}
+    // section1
 .outframe1{
-    width: 1300px;
-    height: 100px;
-    border: 1px solid red;
-    margin-top: 60px;
+    width: 100%;
+    height: 7.69%;
+    margin-top: 4.61%;
      .logo{
-        width: 200px;
-        height: 80px;
+        width: 10%;
         float: left;
-        margin-top: 10px;
-        margin-left: 100px;
+        margin-left: 7.69%;
     }
    .right{
-        height: 100px;
-        margin-right: 100px;
+        height: 7.69%;
+        margin-right: 7.69%;
+        margin-top: 2%;
         float: right;
         display: flex;
         align-items: center;
             
             .right-1{
-            font-size: 15px;
+            font-size: 20px;
             padding:0px 0px 0px 30px;
             }
             .right-2{
-                font-size: 15px;
+                font-size: 20px;
                 padding:0px 30px 0px 30px;
             }
              //-------------------------------------------------- VNG 만들기
@@ -136,7 +138,7 @@
         }
             }
             .right-4{
-                font-size: 15px;
+                font-size: 20px;
                 padding:0px 0px 0px 30px;
             }
     }   
@@ -146,21 +148,20 @@
 }
 // section2
 .outframe2{
-    width: 1300px;
-    height: 130px;
-    border: 1px solid red;
-    margin-top: 60px;
+    width: 100vw;
+    height: 15%;
+    margin-top: 4.61%;
     
     .outframe2-1{
         font-size: 20px;
         margin-top: 5px;
         margin-bottom: 5px;
-        margin-left: 100px;
+        margin-left: 7.69%;
     }
     .outframe2-2{
-        margin-top: 10px;
-        margin-left: 100px;
-        font-size: 25px;
+        margin-top: 20px;
+        margin-left: 7.69%;
+        font-size: 35px;
     }
     .outframe2-3{
         height: 35px;
@@ -168,37 +169,42 @@
         font-size: 20px;
         line-height: 35px;
         // line-height랑 div height 같게 주면 수직 가운데 정렬 가능
-        margin-top: 35px;
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-top: 30px;
+        margin-left: 7.69%;
+        margin-right: 7.69%;
     }
     
 }
 // section3
 .outframe3{
-    width: 1300px;
-    height: 845px;
-    border: 1px solid red;
-    margin-top: 100px;
-    
+    width: 100%;
+    margin-top: 7.69%;
     .show-list{
-        width: 1200px;
-        margin-left: 100px;
-      
+        background-color: white;
+        height: 100vh;
+        margin-left: 7.69%;
+        margin-right: 7.69%;
     }
      .show{
-        width: 340px;
+
         display: block;
         text-decoration: none;
         float: left;
-        margin-left: 0px;
-        margin-right: 43px;
-
+        margin-left: 3%;
+        margin-right: 3%;
+        
+        
+        
+        
         .hoverimgchange{
-            width:340px ;
-            height:260px;
+            width:75% ;
+            height:20%;
             position: relative;
-
+            
+            .after{
+                width: 100%;
+                height: 100%;
+            }
             .before { 
                 width:100%; 
                 height:100%;
@@ -214,8 +220,7 @@
             }
            
     }
-    
-    .showtable1{
+        .showtable1{
         margin-top: 25px;
         
         .outframe3-table1-name{
@@ -228,6 +233,7 @@
         }
     }
     .show-name{
+        width: 75%;
         margin-top: 15px;
         font-size: 20px;
     }
@@ -236,13 +242,6 @@
         margin-bottom: 50px;
         font-size: 15px;
     }
-    
-   
-
-
-
-
-
-     }
  }
+}
  
