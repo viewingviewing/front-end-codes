@@ -6,7 +6,7 @@
 
 //section 별로 div 만들때 margin-top만 사용해서 조절 
 body{
-    height: 100vh;
+    height: 300vh;
 }
 
 .tooinner {
@@ -191,29 +191,35 @@ header {
     .show-list{
     margin-left: 100px;
     margin-right: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    .item {
+        grid-column: 3 / 4;
+        justify-content: center;
+        justify-items: center;
     }
-     .show{
+
+
+  }
+        .show{
         width: 340px;
         display: inline-block;
         text-decoration: none;
         border: 1px solid rgba(0,0,0,.125);
-        border-radius: 0.25rem;
         border-radius: 10px;
         margin-bottom: 40px;
         cursor: pointer;
     
 
         img{
-            border-top-left-radius: calc(0.25rem - 1px);
-            border-top-right-radius: calc(0.25rem - 1px);
+            border-top-left-radius: 10px;;
+            border-top-right-radius: 10px;;
+            width:340px ;
+            height:260px;
         }
 
         .hoverimgchange{
-            width:340px ;
-            height:260px;
             position: relative;
 
             .before { 
@@ -250,5 +256,6 @@ header {
         margin-top: 8px;
     }
     }
-}
+
  
+}

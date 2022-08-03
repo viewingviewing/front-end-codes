@@ -50,7 +50,7 @@ table {
 }
 
 body {
-  height: 100vh;
+  height: 300vh;
 }
 
 .tooinner {
@@ -275,27 +275,30 @@ header .tooinner .right-4:hover {
 .too-section2 .show-list {
   margin-left: 100px;
   margin-right: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.too-section2 .show-list .item {
+  grid-column: 3/4;
+  justify-content: center;
+  justify-items: center;
 }
 .too-section2 .show {
   width: 340px;
   display: inline-block;
   text-decoration: none;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
   border-radius: 10px;
   margin-bottom: 40px;
   cursor: pointer;
 }
 .too-section2 .show img {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
-}
-.too-section2 .show .hoverimgchange {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   width: 340px;
   height: 260px;
+}
+.too-section2 .show .hoverimgchange {
   position: relative;
 }
 .too-section2 .show .hoverimgchange .before {
