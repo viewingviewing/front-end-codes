@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  height: 300vh;
+}
+
+.tooinner {
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .tooinner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .tooinner .logo {
+  width: 200px;
+  height: 80px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 100px;
+}
+header .tooinner .right {
+  height: 100px;
+  margin-right: 100px;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+header .tooinner .right .right-1 {
+  font-size: 20px;
+  padding: 0px 0px 0px 30px;
+}
+header .tooinner .right .right-2 {
+  font-size: 20px;
+  padding: 0px 30px 0px 30px;
+}
+header .tooinner .right .right-3 {
+  padding: 0px 0px 25px 0px;
+}
+header .tooinner .right .right-3 a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 20px;
+  color: rgba(244, 3, 224, 0.4666666667);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 6px;
+  overflow: hidden;
+  margin-top: 25px;
+}
+header .tooinner .right .right-3 a:hover {
+  background: rgba(244, 3, 224, 0.4666666667);
+  color: #050801;
+  box-shadow: 0 0 5px rgba(244, 3, 224, 0.4666666667), 0 0 25px rgba(244, 3, 224, 0.4666666667), 0 0 50px rgba(244, 3, 224, 0.4666666667), 0 0 200px rgba(244, 3, 224, 0.4666666667);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.3333333333));
+}
+header .tooinner .right .right-3 a span {
+  position: absolute;
+  display: block;
+}
+header .tooinner .right .right-3 a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(244, 3, 224, 0.4666666667));
+  -webkit-animation: animate1 1s linear infinite;
+          animation: animate1 1s linear infinite;
+}
+@-webkit-keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+header .tooinner .right .right-3 a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgba(244, 3, 224, 0.4666666667));
+  -webkit-animation: animate2 1s linear infinite;
+          animation: animate2 1s linear infinite;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+@-webkit-keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+header .tooinner .right .right-3 a span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(270deg, transparent, rgba(244, 3, 224, 0.4666666667));
+  -webkit-animation: animate3 1s linear infinite;
+          animation: animate3 1s linear infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+@-webkit-keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+header .tooinner .right .right-3 a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, rgba(244, 3, 224, 0.4666666667));
+  -webkit-animation: animate4 1s linear infinite;
+          animation: animate4 1s linear infinite;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+@-webkit-keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+header .tooinner .right .right-4 {
+  font-size: 20px;
+  padding: 0px 0px 0px 30px;
+}
+header .tooinner .right-1:hover {
+  color: plum;
+  cursor: pointer;
+}
+header .tooinner .right-2:hover {
+  color: plum;
+  cursor: pointer;
+}
+header .tooinner .right-4:hover {
+  color: plum;
+  cursor: pointer;
+}
+
+.too-section1 {
+  margin-top: 50px;
+}
+.too-section1 .section1-1 {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 100px;
+}
+.too-section1 .section1-2 {
+  margin-top: 10px;
+  margin-left: 100px;
+  font-size: 25px;
+}
+.too-section1 .section1-3 {
+  height: 35px;
+  background-color: gainsboro;
+  line-height: 35px;
+  margin-top: 35px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.too-section1 .section1-3 .outframe2-3-1 {
+  font-size: 25px;
+}
+
+.too-section2 {
+  margin-top: 100px;
+}
+.too-section2 .show-list {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.too-section2 .show-list .item {
+  grid-column: 3/4;
+  justify-content: center;
+  justify-items: center;
+}
+.too-section2 .show {
+  width: 340px;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+.too-section2 .show img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 340px;
+  height: 260px;
+}
+.too-section2 .show .hoverimgchange {
+  position: relative;
+}
+.too-section2 .show .hoverimgchange .before {
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: opacity 1s;
+}
+.too-section2 .show .hoverimgchange .before:hover {
+  opacity: 0;
+}
+.too-section2 .show .review-info {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+}
+.too-section2 .show .review-info-top .yellow-star {
+  font-size: 1.2em;
+  color: rgb(255, 191, 0);
+}
+.too-section2 .show .review-info-top span {
+  font-size: 0.8em;
+  color: #bbb;
+}
+.too-section2 .show p {
+  font-size: 1em;
+  margin-top: 8px;
+}/*# sourceMappingURL=style.css.map */
