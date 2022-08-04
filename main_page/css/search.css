@@ -1,0 +1,45 @@
+.search-result {
+  margin-top: 150px;
+  padding-bottom: 100px;
+}
+.search-result h2 {
+  font-weight: 700;
+}
+.search-result h2 b {
+  color: #3543D4;
+}
+.search-result .result-container {
+  margin-top: 50px;
+}
+.search-result .result-container > div {
+  display: none;
+  margin-top: 50px;
+}
+.search-result .result-container > div h3 {
+  margin: 20px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+}
+.search-result .result-container > div .itemList {
+  margin: 0 10px;
+}
+.search-result .result-container > div .itemList li {
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.search-result .result-container > div .itemList li .photo img {
+  width: 120px;
+}
+.search-result .result-container > div .itemList li .data {
+  font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-center;
+  justify-content: center;
+}
+.search-result .result-container > div .itemList li .data .itemInfo {
+  margin-top: 5px;
+  color: #666;
+  font-size: 0.8em;
+}/*# sourceMappingURL=search.css.map */
