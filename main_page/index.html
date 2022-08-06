@@ -18,13 +18,14 @@
   <!-- HEADER -->
   <header>
     <div class="inner">
-      <a href="/" class="logo">
-        <span>뷰잉뷰잉</span>
-      </a>
 
+      <a href="/" class="logo">
+        <img src="img/logo_pink.png" alt="뷰잉뷰잉">
+      </a>
       <div class="sub-menu">
-        <a href="javascript:void(0)" class="btn login">로그인 | 회원가입</a>
+        <a href="login.html" class="btn login">로그인 | 회원가입</a>
       </div>
+
     </div>
   </header>
 
@@ -35,16 +36,10 @@
       <h2>원하는 시야 후기를 찾아보세요!</h2>
       <div class="search-container">
         <div class="input-group mb-3">
-          <button class="btn btn-outline-secondary dropdown-toggle btn--search" type="button" data-bs-toggle="dropdown" aria-expanded="false">분류</button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">공연장명</a></li>
-            <li><a class="dropdown-item" href="#">공연명</a></li>
-            <li><a class="dropdown-item" href="#">아티스트명</a></li>
-          </ul>
-          <input type="text" class="form-control" aria-label="Text input with dropdown button" onkeypress="if(event.keyCode==13){search();}" placeholder="공연장 / 공연명 / 아티스트명을 검색하세요.">
+          <input type="text" class="form-control" aria-label="Text input" onkeypress="if(event.keyCode==13){search();}" placeholder="공연장 / 공연명 / 아티스트명을 검색하세요.">
         </div>
       </div>
-    
+
     </div>
   </section>
 
@@ -62,7 +57,7 @@
         </div>
       </div>
       <div class="review-container">
-        <div class="review card" style="width: 22rem;">
+        <div class="review card" style="width: 22rem;" onclick="location.href='review-detail.html'">
           <img src="img/3.jpg" class="card-img-top" alt="review image">
           <div class="card-body">
             <div class="review-info">
@@ -76,7 +71,7 @@
             </div>
           </div>
         </div>
-        <div class="review card" style="width: 22rem;">
+        <div class="review card" style="width: 22rem;" onclick="location.href='review-detail.html'">
           <img src="img/3.jpg" class="card-img-top" alt="review image">
           <div class="card-body">
             <div class="review-info">
@@ -90,7 +85,7 @@
             </div>
           </div>
         </div>
-        <div class="review card" style="width: 22rem;">
+        <div class="review card" style="width: 22rem;" onclick="location.href='review-detail.html'">
           <img src="img/3.jpg" class="card-img-top" alt="review image">
           <div class="card-body">
             <div class="review-info">
