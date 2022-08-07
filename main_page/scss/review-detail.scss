@@ -1,33 +1,8 @@
-@import "_variables";
-@import "reset";
-
 //header
 header {
   background: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-  .right {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    .profile {
-      font-size: 14px;
-      display: flex;
-      align-items: center;
-      img {
-        width: 30px;
-        margin: 0 10px;
-      }
-    }
-    a {
-      font-size: 0.8rem;
-      margin-left: 20px;
-      cursor: pointer;
-      color: black;
-      &:hover {
-        color: $main_pink;
-      }
-    }
-  }
+  font: inherit;
 }
 
 // REVIEW

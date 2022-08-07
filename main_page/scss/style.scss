@@ -65,6 +65,27 @@ header {
           color: black;
         }
       }
+      height: 100px;
+      display: flex;
+      align-items: center;
+      .profile {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 30px;
+          margin: 0 10px;
+        }
+      }
+      a {
+        font-size: 0.8rem;
+        margin-left: 20px;
+        cursor: pointer;
+        color: black;
+        &:hover {
+          color: $main_pink;
+        }
+      }
     }
   }
 }
@@ -143,13 +164,15 @@ header {
   }
 }
 
+/* LOGIN AREA */
 .login-area {
-  // margin-top: 100px;
   position: relative;
-  // background: #000;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  img {
+    cursor: pointer;
+  }
 }
