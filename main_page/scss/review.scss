@@ -1,39 +1,7 @@
-@import "_variables";
-@import "reset";
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-
 /* HEADER */
 header {
   background: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-  .tooinner {
-    display: flex;
-    justify-content: space-between;
-   .right {
-      height: 100px;
-      display: flex;
-      align-items: center;
-      .profile {
-        font-size: 14px;
-        display: flex;
-        align-items: center;
-        img {
-          width: 30px;
-          margin: 0 10px;
-        }
-      }
-      a {
-        font-size: 0.8rem;
-        margin-left: 20px;
-        cursor: pointer;
-        color: black;
-        &:hover {
-          color: $main_pink;
-        }
-      }
-    }
-  }
 }
 
 /* HALL DETAIL */
