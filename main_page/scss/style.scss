@@ -1,11 +1,9 @@
 @import "_variables";
 @import "reset";
 
-@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
-
 @font-face {
-  font-family: 'CWDangamAsac-Bold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
+  font-family: 'NanumSquareRound';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,7 +21,7 @@ a {
   text-decoration: none;
 }
 .inner {
-  width: 850px;
+  width: 900px;
   margin: 0 auto;
   position: relative;
 }
@@ -48,21 +46,44 @@ header {
     display: flex;
     justify-content: space-between;
     .logo {
-      font-family: 'CWDangamAsac-Bold';
-      font-size: 2em;
       display: flex;
       justify-content: center;
       align-items: center;
       color: white;
+      img {
+        height: 40px;
+      }
     }
     .sub-menu {
       .login {
+        font-size: .8rem;
         border: 1px solid white;
         color: white;
         transition: .3s;
         &:hover {
           background-color: white;
           color: black;
+        }
+      }
+      height: 100px;
+      display: flex;
+      align-items: center;
+      .profile {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 30px;
+          margin: 0 10px;
+        }
+      }
+      a {
+        font-size: 0.8rem;
+        margin-left: 20px;
+        cursor: pointer;
+        color: black;
+        &:hover {
+          color: $main_pink;
         }
       }
     }
@@ -86,12 +107,6 @@ header {
   .search-container {
     .input-group {
       height: 50px;
-    }
-    .btn--search {
-      background-color: #ffc5db;
-      color: #000;
-      border: none;
-      padding: 0 40px;
     }
   }
 }
@@ -146,5 +161,18 @@ header {
         margin-top: 8px;
       }
     }
+  }
+}
+
+/* LOGIN AREA */
+.login-area {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  img {
+    cursor: pointer;
   }
 }
