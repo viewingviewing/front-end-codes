@@ -1,0 +1,89 @@
+@import "_variables";
+@import "reset";
+
+//header
+header {
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  .right {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    .profile {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      img {
+        width: 30px;
+        margin: 0 10px;
+      }
+    }
+    a {
+      font-size: 0.8rem;
+      margin-left: 20px;
+      cursor: pointer;
+      color: black;
+      &:hover {
+        color: $main_pink;
+      }
+    }
+  }
+}
+
+// REVIEW
+.review {
+    margin-top: 100px;
+    padding-top: 50px;
+    h1 {
+      font-weight: bold;
+      font-size: 1.3rem;
+      margin-bottom: 50px;
+    }
+    .seat {
+      margin-top: 25px;
+      .seat-info {
+        display: flex;
+        width: 400px;
+        height: 40px;
+        margin-right: 500px;
+        //display: flex;
+        span {
+          //background-color:orange;
+          padding: 0 10px 10px 10px;
+          //justify-content: center;
+          //align-items: center;
+        }
+      }
+    }
+    .star-container {
+      font-size: 1rem;
+      margin-right: 10px;
+      p {
+        margin-top: 25px;
+        margin-bottom: 5px;
+      }
+      .star {
+        color: rgb(255, 191, 0);
+        margin-right: 15px;
+      }
+    }
+    .user-profile {
+      margin-top: 25px;
+      //display: flex;
+      .profile {
+        display: flex;
+        width: 400px;
+        height: 40px;
+        margin-right: 500px;
+        span {
+          padding: 0 10px 10px 10px;
+          //background-color: orange;
+        }
+      }
+    }
+    .btn-dark {
+      margin-top: 50px;
+      margin-bottom: 100px;
+      width: 100px;
+    }
+}
