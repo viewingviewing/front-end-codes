@@ -1,11 +1,11 @@
-//header
+/* HEADER */
 header {
   background: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
   font: inherit;
 }
 
-// REVIEW
+/* REVIEW */
 .review {
     margin-top: 100px;
     padding-top: 50px;
@@ -48,7 +48,7 @@ header {
         }
       }
       .show-info {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         display: flex;
         p {
           padding-right: 10px;
