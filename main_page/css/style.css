@@ -133,11 +133,14 @@ header .inner .sub-menu .profile img {
   width: 30px;
   margin: 0 10px;
 }
+header .inner .sub-menu .profile {
+  color: white;
+}
 header .inner .sub-menu a {
   font-size: 0.8rem;
   margin-left: 20px;
   cursor: pointer;
-  color: black;
+  color: white;
 }
 header .inner .sub-menu a:hover {
   color: #FF7AAA;
@@ -154,6 +157,15 @@ header .inner .sub-menu a:hover {
 .header--white .inner .sub-menu .login:hover {
   background-color: #1A1F57;
   color: white;
+}
+.header--white .inner .sub-menu .profile {
+  color: black;
+}
+.header--white .inner .sub-menu a {
+  color: black;
+}
+.header--white .inner .sub-menu a:hover {
+  color: #FF7AAA;
 }
 
 /* BANNER */

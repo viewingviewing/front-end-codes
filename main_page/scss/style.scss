@@ -82,11 +82,14 @@ header {
           margin: 0 10px;
         }
       }
+      .profile {
+        color: white;
+      }
       a {
         font-size: 0.8rem;
         margin-left: 20px;
         cursor: pointer;
-        color: black;
+        color: white;
         &:hover {
           color: $main_pink;
         }
@@ -105,6 +108,15 @@ header {
         &:hover {
           background-color: $main_navy;
           color: white;
+        }
+      }
+      .profile {
+        color: black;
+      }
+      a {
+        color: black;
+        &:hover {
+          color: $main_pink;
         }
       }
     }

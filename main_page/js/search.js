@@ -50,6 +50,12 @@ const hallDB = [
     "hallWeb" : "https://www.sisul.or.kr/open_content/skydome"
   },
   {
+    "hallName" : "세종문화회관대극장",
+    "hallImg" : "http://ticketimage.interpark.com/HousingImage/goods/template/noimage_s.gif",
+    "hallLocation" : "서울특별시 종로구 세종대로 175(세종로)",
+    "hallWeb" : "http://www.sejongpac.or.kr/"
+  },
+  {
     "hallName" : "잠실실내체육관",
     "hallImg" : "http://ticketimage.interpark.com/HousingImage/goods/template/noimage_s.gif",
     "hallLocation" : "서울특별시 송파구 올림픽로 25",
@@ -107,11 +113,11 @@ function searchAll(value){
     hallRes.forEach(res => {
       temp_html =  `<li>
                       <div class="photo">
-                        <a href="review.html"><img src=${res.hallImg} alt="${res.hallName}"></a>
+                        <a href="hall-section/1.html"><img src=${res.hallImg} alt="${res.hallName}"></a>
                       </div>
                       <div class="data">
                         <div class="itemName">
-                          <a href="review.html">${res.hallName}</a>
+                          <a href="hall-section/1.html">${res.hallName}</a>
                         </div>
                         <div class="itemInfo">
                           <div class="location">
