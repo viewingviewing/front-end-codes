@@ -1,0 +1,230 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+header .right {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+header .right .profile {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+header .right .profile img {
+  width: 30px;
+  margin: 0 10px;
+}
+header .right a {
+  font-size: 0.8rem;
+  margin-left: 20px;
+  cursor: pointer;
+  color: black;
+}
+header .right a:hover {
+  color: #FF7AAA;
+}
+
+.fixed-seat {
+  margin-top: 100px;
+  padding-top: 50px;
+}
+.fixed-seat .hall-name {
+  font-family: "NanumSquareRoundOTF";
+  font-weight: 700;
+  font-size: 20px;
+}
+.fixed-seat .seat-info {
+  margin-top: 10px;
+  font-family: "NanumSquareRoundOTF";
+  font-weight: 700;
+  font-size: 28px;
+}
+.fixed-seat .filter {
+  margin-top: 32.29px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  width: 940px;
+  height: 36.41px;
+  background: #D9D9D9;
+}
+.fixed-seat .container {
+  display: flex;
+}
+.fixed-seat .container .line-number {
+  margin-top: 54px;
+  display: grid;
+  grid-template-rows: repeat(5, 40px);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+}
+.fixed-seat .container .line-number .line {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fixed-seat .container .seat-1, .fixed-seat .container .seat-5 {
+  margin-top: 54px;
+  margin-left: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  grid-template-rows: repeat(5, 40px);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+}
+.fixed-seat .container .seat-1 .box, .fixed-seat .container .seat-5 .box {
+  background-color: #E0DFE5;
+}
+.fixed-seat .container .seat-2, .fixed-seat .container .seat-4 {
+  margin-top: 54px;
+  margin-left: 10px;
+  display: grid;
+  grid-template-columns: 40px;
+  grid-template-rows: repeat(5, 40px);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+}
+.fixed-seat .container .seat-2 .box, .fixed-seat .container .seat-4 .box {
+  background-color: #E0DFE5;
+}
+.fixed-seat .container .seat-3 {
+  margin-top: 54px;
+  margin-left: 10px;
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(5, 40px);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+}
+.fixed-seat .container .seat-3 .box {
+  background-color: #E0DFE5;
+}
+.fixed-seat .specific-seat-info {
+  margin-top: 100px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.fixed-seat .star-rating {
+  margin-top: 24px;
+  display: flex;
+}
+.fixed-seat .star-rating .rating {
+  display: flex;
+  align-items: center;
+  margin-left: 160px;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 26px;
+}
+.fixed-seat .recent-review {
+  margin-top: 15px;
+}
+.fixed-seat .review-list .review-list-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 25%));
+  gap: 25px 13px;
+  justify-content: space-between;
+}
+.fixed-seat .review-list .review-list-container .review {
+  cursor: pointer;
+}
+.fixed-seat .review-list .review-list-container .review .review-img {
+  position: relative;
+}
+.fixed-seat .review-list .review-list-container .review .review-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+  border: 0px;
+  display: block;
+}
+.fixed-seat .review-list .review-list-container .review .card-body {
+  background: #FAFAFA;
+  border-radius: 10px;
+  padding: 15px;
+}
+.fixed-seat .review-list .review-list-container .review .card-body .review-info-top {
+  display: flex;
+  justify-content: space-between;
+}
+.fixed-seat .review-list .review-list-container .review .card-body .review-info-top .yellow-star {
+  font-size: 1.1rem;
+  color: #FABF41;
+  margin-bottom: 15px;
+}
+.fixed-seat .review-list .review-list-container .review .card-body .review-info-top span {
+  font-size: 8px;
+  color: #ADAAB1;
+}
+.fixed-seat .review-list .review-list-container .review .card-body p {
+  margin-top: 8px;
+}
+.fixed-seat .review-list .review-list-container .review .card-body p:nth-child(2) {
+  font-size: 8px;
+  font-weight: 400;
+  color: #6B696D;
+}
+.fixed-seat .review-list .review-list-container .review .card-body p:nth-child(3) {
+  font-size: 12px;
+  font-weight: 400;
+}
+.fixed-seat .review-list .review-list-container .review .card-body p:nth-child(4) {
+  font-size: 14px;
+  font-weight: 800;
+}/*# sourceMappingURL=fixed_seat.css.map */

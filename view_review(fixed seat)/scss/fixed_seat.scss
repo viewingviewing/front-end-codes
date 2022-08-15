@@ -1,0 +1,195 @@
+@import "_variables";
+@import "reset";
+
+//header
+header {
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  .right {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    .profile {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      img {
+        width: 30px;
+        margin: 0 10px;
+      }
+    }
+    a {
+      font-size: 0.8rem;
+      margin-left: 20px;
+      cursor: pointer;
+      color: black;
+      &:hover {
+        color: $main_pink;
+      }
+    }
+  }
+}
+
+//FIXED-SEAT
+.fixed-seat {
+  margin-top: 100px;
+  padding-top: 50px;
+
+  .hall-name {
+    font-family: 'NanumSquareRoundOTF';
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .seat-info {
+    margin-top: 10px;
+    font-family: 'NanumSquareRoundOTF';
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  .filter {
+    margin-top: 32.29px;
+    display: flex;
+    align-items: center;
+    padding : 10px;
+    font-weight: 400;
+    font-size: 14px;
+    width: 940px;
+    height: 36.41px;
+    background: #D9D9D9;
+  }
+
+  .container {
+    display: flex;
+    .line-number {
+      margin-top: 54px;
+      display: grid;
+      grid-template-rows: repeat(5,40px);
+      column-gap: 10px; 
+      row-gap: 10px; 
+      .line {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .seat-1, .seat-5 {
+      margin-top: 54px;
+      margin-left: 10px;
+      display: grid;
+      grid-template-columns: repeat(3,40px);
+      grid-template-rows: repeat(5,40px);
+      column-gap: 10px; 
+      row-gap: 10px; 
+      .box {
+        background-color: #E0DFE5;
+      }
+    }
+    .seat-2, .seat-4 {
+      margin-top: 54px;
+      margin-left: 10px;
+      display: grid;
+      grid-template-columns: 40px;
+      grid-template-rows: repeat(5,40px);
+      column-gap: 10px; 
+      row-gap: 10px; 
+      .box {
+        background-color: #E0DFE5;
+      }
+    }
+    .seat-3 {
+      margin-top: 54px;
+      margin-left: 10px;
+      display: grid;
+      grid-template-columns: repeat(10,40px);
+      grid-template-rows: repeat(5,40px);
+      column-gap: 10px; 
+      row-gap: 10px; 
+      .box {
+        background-color: #E0DFE5;
+      }
+    }
+  }
+
+  .specific-seat-info {
+    margin-top: 100px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .star-rating {
+    margin-top: 24px;
+    display: flex;
+    .rating {
+      display: flex;
+      align-items: center;
+      margin-left: 160px;
+      font-family: 'Inter';
+      font-weight: 700;
+      font-size: 26px;
+    }
+  }
+
+  //RECENT-REVIEW
+.recent-review {
+  margin-top: 15px;
+}
+.review-list {
+  .review-list-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, calc(100% / 4)));
+    gap: 25px 13px;
+    justify-content: space-between;
+    .review {
+      cursor: pointer;
+      .review-img {
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px 10px 0 0;
+          border: 0px; 
+          display: block; 
+        }
+      }
+      .card-body {
+        background: #FAFAFA;
+        border-radius: 10px;
+        padding: 15px;
+        .review-info-top {
+          display: flex;
+          justify-content: space-between;
+          .yellow-star {
+            font-size: 1.1rem;
+            color: #FABF41;
+            margin-bottom: 15px;
+          }
+          span {
+            font-size: 8px;
+            color: #ADAAB1;
+          }
+        }
+        p {
+          margin-top: 8px;
+          &:nth-child(2) {
+            font-size: 8px;
+            font-weight: 400;
+            color: #6B696D;
+          }
+          &:nth-child(3) {
+            font-size: 12px;
+            font-weight: 400;
+          }
+          &:nth-child(4) {
+            font-size: 14px;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+}
+}
