@@ -1,81 +1,88 @@
+// 임시 좌석정보
+const seatReview = [
+  {
+    "seatImg":"../../img/view1.jpeg",
+    "hallName":"세종문화회관 대극장",
+    "showName":"웃는남자",
+    "date": "2022-08-16",
+    "seat":"2-C-56",
+    "writer":"뷰잉뷰잉"
+  },
+  {
+    "seatImg":"../../img/view2.jpeg",
+    "hallName":"세종문화회관 대극장",
+    "showName":"웃는남자",
+    "date": "2022-08-16",
+    "seat":"2-D-131",
+    "writer":"뷰잉뷰잉"
+  },
+]
+
+// 좌석표 그리기
 function drawSection(section){
   if (section == 1) {
+
     rowsdraw(0, 1, 500, 700, "null");
 
     seatCnt = 1;
-    rowsdraw(6, 1, 500, 80, "A");
-    rowsdraw(7, 2, 500, 110, "A");
-    rowsdraw(8, 3, 500, 140, "A");
-    rowsdraw(9, 4, 500, 170, "A");
-    rowsdraw(10, 5, 500, 200, "A");
-    rowsdraw(11, 6, 500, 230, "A");
-    rowsdraw(12, 7, 500, 260, "A");
-    rowsdraw(13, 8, 500, 290, "A");
-    rowsdraw(14, 9, 500, 320, "A");
-    rowsdraw(14, 10, 500, 350, "A");
-    rowsdraw(14, 11, 500, 380, "A");
-    rowsdraw(14, 12, 500, 410, "A");
-    rowsdraw(14, 13, 500, 440, "A");
-    rowsdraw(14, 14, 500, 470, "A");
-    rowsdraw(14, 15, 500, 500, "A");
-    rowsdraw(14, 16, 500, 530, "A");
-    rowsdraw(14, 17, 500, 560, "A");
-    rowsdraw(14, 18, 500, 590, "A");
+    rowsdraw(6, 1, 300, 80, "A");
+    rowsdraw(7, 2, 300, 110, "A");
+    rowsdraw(8, 3, 300, 140, "A");
+    rowsdraw(9, 4, 300, 170, "A");
+    rowsdraw(10, 5, 300, 200, "A");
+    rowsdraw(11, 6, 300, 230, "A");
+    rowsdraw(12, 7, 300, 260, "A");
+    rowsdraw(13, 8, 300, 290, "A");
+    rowsdraw(14, 9, 300, 320, "A");
+    rowsdraw(14, 10, 300, 350, "A");
+    rowsdraw(14, 11, 300, 380, "A");
+    rowsdraw(14, 12, 300, 410, "A");
+    rowsdraw(14, 13, 300, 440, "A");
+    rowsdraw(14, 14, 300, 470, "A");
+    rowsdraw(14, 15, 300, 500, "A");
+    rowsdraw(14, 16, 300, 530, "A");
+    rowsdraw(14, 17, 300, 560, "A");
+    rowsdraw(14, 18, 300, 590, "A");
   
     seatCnt = 1;
     for(let k=1; k<19; k++) {
-      rowsdraw(13, k, 900, 50 + (30*k), "B");
+      rowsdraw(13, k, 700, 50 + (30*k), "B");
     }
   
     seatCnt = 1;
     for(let k=1; k<17; k++) {
-      rowsdraw(13, k, 1300, 50 + (30*k), "C");
+      rowsdraw(13, k, 1100, 50 + (30*k), "C");
     }
   
     seatCnt = 1;
     for(let k=1; k<19; k++) {
-      rowsdraw(13, k, 1700, 50 + (30*k), "D");
+      rowsdraw(13, k, 1500, 50 + (30*k), "D");
     }
   
     seatCnt = 1;
-    rowsdraw(6, 1, 1890, 80, "E");
-    rowsdraw(7, 2, 1920, 110, "E");
-    rowsdraw(8, 3, 1950, 140, "E");
-    rowsdraw(9, 4, 1980, 170, "E");
-    rowsdraw(10, 5, 2010, 200, "E");
-    rowsdraw(11, 6, 2040, 230, "E");
-    rowsdraw(12, 7, 2070, 260, "E");
-    rowsdraw(13, 8, 2100, 290, "E");
-    rowsdraw(14, 9, 2130, 320, "E");
-    rowsdraw(14, 10, 2130, 350, "E");
-    rowsdraw(14, 11, 2130, 380, "E");
-    rowsdraw(14, 12, 2130, 410, "E");
-    rowsdraw(14, 13, 2130, 440, "E");
-    rowsdraw(14, 14, 2130, 470, "E");
-    rowsdraw(14, 15, 2130, 500, "E");
-    rowsdraw(14, 16, 2130, 530, "E");
-    rowsdraw(14, 17, 2130, 560, "E");
-    rowsdraw(14, 18, 2130, 590, "E");
+    rowsdraw(6, 1, 1690, 80, "E");
+    rowsdraw(7, 2, 1720, 110, "E");
+    rowsdraw(8, 3, 1750, 140, "E");
+    rowsdraw(9, 4, 1780, 170, "E");
+    rowsdraw(10, 5, 1810, 200, "E");
+    rowsdraw(11, 6, 1840, 230, "E");
+    rowsdraw(12, 7, 1870, 260, "E");
+    rowsdraw(13, 8, 1900, 290, "E");
+    rowsdraw(14, 9, 1930, 320, "E");
+    rowsdraw(14, 10, 1930, 350, "E");
+    rowsdraw(14, 11, 1930, 380, "E");
+    rowsdraw(14, 12, 1930, 410, "E");
+    rowsdraw(14, 13, 1930, 440, "E");
+    rowsdraw(14, 14, 1930, 470, "E");
+    rowsdraw(14, 15, 1930, 500, "E");
+    rowsdraw(14, 16, 1930, 530, "E");
+    rowsdraw(14, 17, 1930, 560, "E");
+    rowsdraw(14, 18, 1930, 590, "E");
   
-    $("#diagram").ejDiagram({                   
-      width: "100%",
-      height: "70vh",                  
-      pageSettings: {scrollLimit: "diagram" },
-      nodes: nodes,
-      click: click,
-      defaultSettings: {
-        node: {
-          constraints: ej.datavisualization.Diagram.NodeConstraints.Default &~ ej.datavisualization.Diagram.NodeConstraints.Select,
-        },
-      },
-      selectedItems: {
-        constraints:ej.datavisualization.Diagram.SelectorConstraints.None
-      },
-      snapSettings: {
-        snapConstraints:ej.datavisualization.Diagram.SnapConstraints.None,
-      }
-    });
+    drawSeat(nodes);
+
   } else if (section == 2) {
+
     rowsdraw(0, 1, 500, 700, "null");
 
     seatCnt = 1;
@@ -174,23 +181,7 @@ function drawSection(section){
     rowsdraw(10, 13, 2370, 620, "G");
     rowsdraw(6, 14, 2350, 650, "G");
 
-    $("#diagram").ejDiagram({                   
-      width: "100%",
-      height: "70vh",                  
-      pageSettings: {scrollLimit: "diagram" },
-      nodes: nodes,
-      click: click,
-      defaultSettings: {
-        node: {
-          constraints: ej.datavisualization.Diagram.NodeConstraints.Default &~ ej.datavisualization.Diagram.NodeConstraints.Select,
-        },
-      },
-      selectedItems: {
-        constraints:ej.datavisualization.Diagram.SelectorConstraints.None
-      },
-      snapSettings: {
-        snapConstraints:ej.datavisualization.Diagram.SnapConstraints.None,
-      }
-    });
+    drawSeat(nodes);
   }
+  colorSeat();
 } 
