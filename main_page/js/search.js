@@ -45,15 +45,27 @@ const showDB = [
 const hallDB = [
   {
     "hallName" : "고척스카이돔",
-    "hallImg" : "http://ticketimage.interpark.com/HousingImage/goods/template/noimage_s.gif"
+    "hallImg" : "http://ticketimage.interpark.com/HousingImage/goods/template/noimage_s.gif",
+    "hallLocation" : "서울 구로구 경인로 430 고척스카이돔",
+    "hallWeb" : "https://www.sisul.or.kr/open_content/skydome"
+  },
+  {
+    "hallName" : "세종문화회관대극장",
+    "hallImg" : "http://ticketimage.interpark.com/HousingImage/goods/template/noimage_s.gif",
+    "hallLocation" : "서울특별시 종로구 세종대로 175(세종로)",
+    "hallWeb" : "http://www.sejongpac.or.kr/"
   },
   {
     "hallName" : "잠실실내체육관",
-    "hallImg" : "http://ticketimage.interpark.com/HousingImage/goods/template/noimage_s.gif"
+    "hallImg" : "http://ticketimage.interpark.com/HousingImage/goods/template/noimage_s.gif",
+    "hallLocation" : "서울특별시 송파구 올림픽로 25",
+    "hallWeb" : "https://stadium.seoul.go.kr/reserve/jamsil/inside-stadium"
   },
   {
     "hallName" : "부산아시아드주경기장",
-    "hallImg" : "http://ticketimage.interpark.com/HousingImage/goods/template/noimage_s.gif"
+    "hallImg" : "http://ticketimage.interpark.com/HousingImage/goods/template/noimage_s.gif",
+    "hallLocation" : "부산광역시 연제구 월드컵대로 344",
+    "hallWeb" : "https://www.busan.go.kr/stadium/sfcimplexmain"
   },
 ];
 const artistDB = [
@@ -100,14 +112,22 @@ function searchAll(value){
     $('.hall-result .result__num').text(hallRes.length);
     hallRes.forEach(res => {
       temp_html =  `<li>
-                      <div class="col photo">
-                        <a href="review.html">
-                          <img src=${res.hallImg} alt=${res.hallName}>
-                        </a>
+                      <div class="photo">
+                        <a href="hall-section/1.html"><img src=${res.hallImg} alt="${res.hallName}"></a>
                       </div>
-                      <div class="col data">
+                      <div class="data">
                         <div class="itemName">
-                          <a href="review.html">${res.hallName}</a>
+                          <a href="hall-section/1.html">${res.hallName}</a>
+                        </div>
+                        <div class="itemInfo">
+                          <div class="location">
+                            <img src="img/icon-location.png" alt="location">
+                            <p>${res.hallLocation}</p>
+                          </div>
+                          <div class="website">
+                            <img src="img/icon-web.png" alt="website">
+                            <a href=${res.hallWeb}>${res.hallWeb}</a>
+                          </div>
                         </div>
                       </div>
                     </li>`;
@@ -122,17 +142,17 @@ function searchAll(value){
     $('.show-result .result__num').text(showRes.length);
     showRes.forEach(res => {
       temp_html =  `<li>
-                      <div class="col photo">
-                          <img src=${res.posterImg} alt="${res.hallName}">
-                        </a>
+                      <div class="photo">
+                          <img src=${res.posterImg} alt=${res.showName}>
+                        
                       </div>
-                      <div class="col data">
+                      <div class="data">
                         <div class="itemName">
                           <a href="javascript:void(0)">${res.showName}</a>
                         </div>
                         <div class="itemInfo">
-                          <span class="hall">${res.hallName}</span>
-                          <span class="date">${res.showDate}</span>
+                          <p class="hall">${res.hallName}</p>
+                          <p class="date">${res.showDate}</p>
                         </div>
                       </div>
                     </li>`;
@@ -149,17 +169,20 @@ function searchAll(value){
     $('.artist-result .result__num').text(artistRes.length);
     artistRes.forEach(res => {
       temp_html =  `<li>
-                      <div class="col photo">
+                      <div class="photo">
                         <a href="javascript:void(0)">
                           <img src=${res.artistImg} alt=${res.artistName}>
                         </a>
                       </div>
-                      <div class="col data">
+                      <div class="data">
                         <div class="itemName">
                           <a href="javascript:void(0)">${res.artistName}</a>
                         </div>
                         <div class="itemInfo">
-                          <span class="recentShow">최근 공연 : ${res.recentShow}</span>
+                          <span class="recentShow">
+                            <p>최근 공연</p>
+                            <p>${res.recentShow}</p>
+                          </span>
                         </div>
                       </div>
                     </li>`;

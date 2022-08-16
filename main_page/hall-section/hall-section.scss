@@ -1,0 +1,14 @@
+.section-select {
+  margin-top: 130px;
+  line-height: 30px;
+  ul {
+    display: flex;
+    li {
+      margin-right: 10px;
+    }
+  }
+}
+
+#diagram_canvas_diagramLayer path {
+  stroke: transparent;
+}
