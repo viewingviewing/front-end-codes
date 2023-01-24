@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,6 +21,9 @@
       <a href="/" class="logo">
         <img src="img/logo_pink.png" alt="뷰잉뷰잉">
       </a>
+      <div class="search-container col-6">
+        <input type="text" class="form-control" aria-label="Text input" onkeypress="if(event.keyCode==13){search();}" placeholder="공연장 / 공연명 / 아티스트명을 검색하세요.">
+      </div>
       <div class="sub-menu">
         <a href="login.html" class="btn login">로그인 | 회원가입</a>
       </div>
@@ -28,71 +31,94 @@
     </div>
   </header>
 
-  <!-- SEARCH -->
-  <section class="search">
-    <div class="inner">
-      
-      <h2>원하는 시야 후기를 찾아보세요!</h2>
-      <div class="search-container">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" aria-label="Text input" onkeypress="if(event.keyCode==13){search();}" placeholder="공연장 / 공연명 / 아티스트명을 검색하세요.">
-        </div>
-      </div>
-
-    </div>
+  <!-- BANNER -->
+  <section class="banner">
+    <img src="img/banner-kinky.jpg" alt="kinky">
   </section>
 
   <!-- RECENT REVIEW -->
-  <section class="recent-review">
+  <section class="recent-review review-list">
     <div class="inner">
       
       <div class="review-container-top">
-        <div class="top-left">
-          <h3>최근 올라온 후기</h3>
-          <span>뷰잉뷰잉에 올라온 최근 시야 후기 리스트입니다.</span>
-        </div>
-        <div class="top-right">
-          <a href="javascript:void(0)">더보기</a>
-        </div>
+        <h3>최근 올라온 후기</h3>
       </div>
-      <div class="review-container">
-        <div class="review card" style="width: 22rem;" onclick="location.href='review-detail.html'">
-          <img src="img/3.jpg" class="card-img-top" alt="review image">
+      <div class="review-list-container">
+        <div class="review" onclick="location.href='review-detail.html'">
+          <div class="hoverimgchange">
+            <img src="/img/1.jpg"  class="before" alt="1" >
+            <img src="/img/좌석배치도.png" class="after" alt="1-1"  >
+          </div>
           <div class="card-body">
             <div class="review-info">
               <div class="review-info-top">
                 <div class="yellow-star">★★☆☆☆</div>
-                <span>vngv***</span>
-                <span>| 2022.07.09</span>
+                <div>
+                  <span>vngv***</span>
+                  <span>| 2022.07.09</span>
+                </div>
               </div>
+              <p>고척스카이돔</p>
               <p>2018 Melon Music Award</p>
               <p>314구역 E열 5번</p>
             </div>
           </div>
         </div>
-        <div class="review card" style="width: 22rem;" onclick="location.href='review-detail.html'">
-          <img src="img/3.jpg" class="card-img-top" alt="review image">
+        <div class="review" onclick="location.href='review-detail.html'">
+          <div class="hoverimgchange">
+            <img src="/img/1.jpg"  class="before" alt="1" >
+            <img src="/img/좌석배치도.png" class="after" alt="1-1"  >
+          </div>
           <div class="card-body">
             <div class="review-info">
               <div class="review-info-top">
                 <div class="yellow-star">★★☆☆☆</div>
-                <span>vngv***</span>
-                <span>| 2022.07.09</span>
+                <div>
+                  <span>vngv***</span>
+                  <span>| 2022.07.09</span>
+                </div>
               </div>
+              <p>고척스카이돔</p>
               <p>2018 Melon Music Award</p>
               <p>314구역 E열 5번</p>
             </div>
           </div>
         </div>
-        <div class="review card" style="width: 22rem;" onclick="location.href='review-detail.html'">
-          <img src="img/3.jpg" class="card-img-top" alt="review image">
+        <div class="review" onclick="location.href='review-detail.html'">
+          <div class="hoverimgchange">
+            <img src="/img/1.jpg"  class="before" alt="1" >
+            <img src="/img/좌석배치도.png" class="after" alt="1-1"  >
+          </div>
           <div class="card-body">
             <div class="review-info">
               <div class="review-info-top">
                 <div class="yellow-star">★★☆☆☆</div>
-                <span>vngv***</span>
-                <span>| 2022.07.09</span>
+                <div>
+                  <span>vngv***</span>
+                  <span>| 2022.07.09</span>
+                </div>
               </div>
+              <p>고척스카이돔</p>
+              <p>2018 Melon Music Award</p>
+              <p>314구역 E열 5번</p>
+            </div>
+          </div>
+        </div>
+        <div class="review" onclick="location.href='review-detail.html'">
+          <div class="hoverimgchange">
+            <img src="/img/1.jpg"  class="before" alt="1" >
+            <img src="/img/좌석배치도.png" class="after" alt="1-1"  >
+          </div>
+          <div class="card-body">
+            <div class="review-info">
+              <div class="review-info-top">
+                <div class="yellow-star">★★☆☆☆</div>
+                <div>
+                  <span>vngv***</span>
+                  <span>| 2022.07.09</span>
+                </div>
+              </div>
+              <p>고척스카이돔</p>
               <p>2018 Melon Music Award</p>
               <p>314구역 E열 5번</p>
             </div>
